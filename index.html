@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jogo da Velha</title>
+    <link href="gamestyle.css" rel="stylesheet" type="text/css">
+    <script src="game.js"></script>
+</head>
+<body onload="setStatusId('status');">
+
+<div class="game">
+    <h1># Jogo da Velha #</h1>
+    <table>
+        <tr>
+            <td><button type="button" value="0" id="00" onclick="clicked(this.id);" class=""></button></td>
+            <td><button type="button" value="0" id="01" onclick="clicked(this.id);" class=""></button></td>
+            <td><button type="button" value="0" id="02" onclick="clicked(this.id);" class=""></button></td>
+        </tr>
+        <tr>
+            <td><button type="button" value="0" id="10" onclick="clicked(this.id);" class=""></button></td>
+            <td><button type="button" value="0" id="11" onclick="clicked(this.id);" class=""></button></td>
+            <td><button type="button" value="0" id="12" onclick="clicked(this.id);" class=""></button></td>
+        </tr>
+        <tr>
+            <td><button type="button" value="0" id="20" onclick="clicked(this.id);" class=""></button></td>
+            <td><button type="button" value="0" id="21" onclick="clicked(this.id);" class=""></button></td>
+            <td><button type="button" value="0" id="22" onclick="clicked(this.id);" class=""></button></td>
+        </tr>
+    </table>
+
+
+        <p class="statusArea" id="status"> </p>
+        <p><button type="button" onclick="restart();">Reiniciar partida</button></p>
+
+
+
+
+</div>
+
+</body>
+</html>
